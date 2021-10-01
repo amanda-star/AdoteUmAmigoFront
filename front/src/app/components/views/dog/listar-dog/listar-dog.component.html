@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cachorros</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        .carroContainer{
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carroContainer">
+        <h2>Cadastro de Animais para Adoção</h2>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Raça</th>
+                <th>Cor</th>
+                <th>Status</th>
+                <th>Tutor</th>
+            </tr>
+            <tr *ngFor="let dog of dogs">
+                <td>{{dog.nome}}</td>
+                <td>{{dog.idade}}</td>
+                <td>{{dog.raca}}</td>
+                <td>{{dog.cor}}</td>
+                <td>{{dog.status}}</td>
+                <td>{{dog.dono_id}}</td>
+            </tr>
+        </table>
+        <a routerLink="dog/cadastar">Novo Cadastro</a>
+    </div>
+</body>
+
+</html>

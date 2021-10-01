@@ -1,0 +1,28 @@
+<div>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" [(ngModel)]="nome" />
+</div>
+<div id="idade">
+    <label for="idade">Idade:</label>
+    <input type="number" name="idade" [(ngModel)]="idade" />
+</div>
+<div id="raca">
+    <label for="raca">Raça:</label>
+    <input type="text" name="raca"  [(ngModel)]="raca"/>
+</div>
+<div id="cor">
+    <label for="marca">Cor:</label>
+    <input type="text" name="cor"[(ngModel)]="cor"  />
+</div>
+<div id="status">
+    <label for="status">Situação:</label>
+    <input type="number" name="status"[(ngModel)]="status"  />
+</div>
+<div id="dono_id">
+    <label for="dono_id">Tutor:</label>
+    <input type="number" name="dono_id"[(ngModel)]="dono_id"  />
+</div>
+<div id="botaoCadastrar">
+    <button (click)="create()">Cadastrar</button>
+</div>
+<a href="">Voltar para Lista</a>
